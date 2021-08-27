@@ -27,7 +27,7 @@ const errorHandler = (error, request, response, next) => {
 }
 
 // this has to be the last loaded middleware.
-app.use(errorHandler)
+
 
 
 let persons = [
@@ -118,6 +118,7 @@ let persons = [
 })
 
 
+
   //Updates person with id
   app.put('/api/persons/:id', (request, response, next) => {
     const body = request.body
@@ -143,6 +144,7 @@ let persons = [
     return maxId + 1
   }
 
+  app.use(errorHandler)
 
   //Listening..
   const PORT = process.env.PORT
