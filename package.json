@@ -20,6 +20,7 @@
   "homepage": "https://github.com/LibeMan/part3#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "cors-anywhere": "^0.4.4",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "morgan": "^1.10.0"
